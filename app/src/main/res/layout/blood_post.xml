@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/search_input"
+
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl4">
+            <RelativeLayout
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding= "10dp"
+                android:id="@+id/rl1">
+                <TextView
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dtX"
+                    android:text="Darah yang di butuhkan :"/>
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/golonganTx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/dtX"
+                    android:text="darah"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15dp"
+    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dtX"
+                    android:id="@+id/tX"
+                    android:text="Dipost tanggal :"/>
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tX"
+                    android:text="tanggal"
+                    android:id="@+id/tanggal"
+                    android:layout_below="@id/dtX"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:visibility="invisible"
+                android:id="@+id/notif"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="-10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/maps_button"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/rl4"
+        android:background="#d7d7d7"
+        ></RelativeLayout>
+
+</RelativeLayout>

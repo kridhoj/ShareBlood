@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ridho.shareblood.MessageInput">
+
+    <include layout="@layout/app_bar"
+        android:id="@+id/main_app_bar"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tx1"
+            android:layout_marginBottom="10dp"
+            android:text="Masukkan pesan untuk pengguna yang akan melihat postingan anda"/>
+        <EditText
+            android:layout_below="@+id/tx1"
+            android:id="@+id/messageTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint=""
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:lines="6"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:scrollHorizontally="false"
+            />
+    </RelativeLayout>
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/postBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableTint="@color/colorPrimary"
+        android:drawablePadding="-10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:background="@color/colorPrimary"
+        android:text="Posting"
+        android:textColor="@color/colorWhite"
+        />
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:elevation="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/search_input"
+    android:layout_marginTop="10dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/main_blog_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/rl2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event"
+                android:textColor="@color/colorPrimary"
+                android:textSize="21sp"
+                android:id="@+id/event1"
+                android:drawableTint="@color/colorPrimary"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/ic_date"
+                android:drawablePadding="20dp"/>
+
+            <TextView
+                android:layout_below="@id/event1"
+                android:layout_marginLeft="55dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nama"
+                android:textSize="18sp"
+                android:id="@+id/nama"
+                android:textColor="#000"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lokasi : "
+                android:layout_below="@id/nama"
+                android:layout_marginLeft="55dp"
+                android:id="@+id/lktx"/>
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nama"
+                android:text="asss"
+                android:layout_toRightOf="@id/lktx"
+                android:id="@+id/lokasiTx"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@id/rl2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#f5f5f5"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="asss"
+                android:layout_marginLeft="55dp"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/tanggalTx"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="asss"
+                android:id="@+id/mulaiTx"
+                android:textColor="@color/colorPrimary"
+                android:layout_toRightOf="@id/tanggalTx"
+                android:layout_marginLeft="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="s/d"
+                android:layout_toRightOf="@id/mulaiTx"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/ss"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="asss"
+                android:id="@+id/selesaiTx"
+                android:textColor="@color/colorPrimary"
+                android:layout_toRightOf="@id/ss"
+                android:layout_marginLeft="5dp"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

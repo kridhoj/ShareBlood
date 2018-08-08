@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "811100283595",
+    "firebase_url": "https://shareblood-bb427.firebaseio.com",
+    "project_id": "shareblood-bb427",
+    "storage_bucket": "shareblood-bb427.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:811100283595:android:58952ac2e5bcd1d3",
+        "android_client_info": {
+          "package_name": "com.ridho.shareblood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "811100283595-7m5a7ss5s07pi7rkrjdc2sjj5ppm9dc1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ridho.shareblood",
+            "certificate_hash": "e6a5b00ed455ee9aee9cb3400f383b650eba4daf"
+          }
+        },
+        {
+          "client_id": "811100283595-d8csqo3clfg4c2det82d4jq1hf4l5qn0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ridho.shareblood",
+            "certificate_hash": "f55b3e734f9f8a1e6072de0abdbbc714f7eb7435"
+          }
+        },
+        {
+          "client_id": "811100283595-fs41lheqij38pobj166rtru0f89kcjj1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ridho.shareblood",
+            "certificate_hash": "3034f2b28f385b40cf4fc24fca5c243ebb62b025"
+          }
+        },
+        {
+          "client_id": "811100283595-fc0ncfk4kere3orse8ktfhlopfjl9m1b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPP7ip4bhZZtjbEssb1L69xceMATkj4kc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "811100283595-fc0ncfk4kere3orse8ktfhlopfjl9m1b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

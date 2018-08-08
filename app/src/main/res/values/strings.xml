@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">ShareBlood</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_event">Event</string>
+    <string name="menu_info">Info</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_post">Post</string>
+    <string name="menu_react">React</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_place_picker">Map</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="pilih_lokasi">Pilih Lokasi</string>
+
+    <string name="terms">
+        1.  Umur 17 – 60 tahun\n
+        2.	Berat badan minimum 45 kg\n
+        3.	Temperatur tubuh : 36,6 – 37,5o C (oral)\n
+        4.	Tekanan darah baik\n
+            Sistole = 110 – 160 mm Hg dan Diastole = 70 – 100 mm Hg\n
+        5.	Denyut nadi; Teratur 50 – 100 kali/ menit\n
+        6.	Hemoglobin\n
+            Wanita minimal = 12 gr % sedangkan Pria minimal = 12,5 gr %\n
+        7.	Jumlah penyumbangan pertahun paling banyak 5 kali\n
+        8.  Tidak pernah menderita Hepatitis B\n
+        9.	Tidak ketergantungan obat\n
+        10.	Tidak termasuk alkoholisme akut dan kronik\n
+        11.	Tidak menderita sifilis\n
+        12.	Tidak menderita tuberkulosa secara klinis\n
+        13.	Tidak menderita epilepsi dan sering kejang\n
+        14.	Tidak menderita penyakit kulit pada vena (pembuluh balik) yang akan ditusuk\n
+        15.	Tidak mempunyai kecenderungan perdarahan atau penyakit darah\n
+            misalnya, defisiensi G6PD, thalasemia, polibetemiavera\n
+        16. Tidak menderita HIV/AIDS\n
+
+    </string>
+</resources>

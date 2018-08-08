@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        android:layout_above="@id/rel6"
+        tools:context=".MapsActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel6"
+        >
+        <android.support.v7.widget.CardView
+            android:id="@+id/main_blog_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rl1">
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/imgProfil"
+                        android:text="Event Name"
+                        android:textSize="25sp"
+                        android:textColor="@color/colorPrimary"
+                        android:paddingBottom="10dp"
+                        android:id="@+id/nameEvent"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pj"
+                        android:text="pj"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/nameEvent"/>
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/username"
+                        android:layout_toRightOf="@+id/nameEvent"
+                        android:text="phonenumber"
+                        android:textSize="10sp"
+                        android:id="@+id/phone_number"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <TextView
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi Event :"
+                    android:layout_below="@id/rl1"
+                    android:id="@+id/ptx"/>
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:textSize="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ptx"
+                    android:id="@+id/messageTx"
+
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lokasi : "
+                    android:textColor="#000"
+                    android:id="@+id/txLokasi"
+                    android:layout_below="@id/messageTx"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/txLokasi"
+                    android:layout_below="@id/messageTx"
+                    android:id="@+id/lokasi"
+                    android:text="lokasi"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal : "
+                    android:textColor="#000"
+                    android:id="@+id/tanggalTx"
+                    android:layout_below="@id/lokasi"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tanggalTx"
+                    android:layout_below="@id/lokasi"
+                    android:id="@+id/tanggalT"
+                    android:text="dd/mm/yy"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Waktu Kegiatan : "
+                    android:textColor="#000"
+                    android:id="@+id/waktuTx"
+                    android:layout_below="@id/tanggalT"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/waktuTx"
+                    android:layout_below="@id/tanggalT"
+                    android:id="@+id/time"
+                    android:text="00:00 s/d 00:00"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/backBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:borderWidth="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="@color/colorWhite"
+        android:tint="@color/colorPrimary"
+        android:src="@drawable/ic_arrow_back"/>
+
+</RelativeLayout>

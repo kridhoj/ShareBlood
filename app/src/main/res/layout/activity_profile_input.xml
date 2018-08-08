@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.ridho.shareblood.ProfileInput">
+
+    <include layout="@layout/app_bar"
+        android:id="@+id/toolbar_page"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/toolbar_page"
+        android:layout_width="match_parent"
+        app:met_floatingLabel="highlight"
+        android:hint="Nama Lengkap"
+        android:layout_height="wrap_content"
+        android:id="@+id/nama_input"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_below="@+id/nama_input"
+        android:layout_width="match_parent"
+        app:met_floatingLabel="highlight"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_height="wrap_content"
+        android:id="@+id/email_input"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email_input"
+        android:id="@+id/constrain">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/address_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="72dp"
+            android:layout_marginStart="16dp"
+            android:hint="Alamat"
+
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toStartOf="@+id/maps_input"
+            app:layout_constraintStart_toStartOf="parent"
+            app:met_floatingLabel="highlight"
+            android:layout_marginRight="72dp"
+            android:layout_marginLeft="16dp" />
+
+        <Button
+            android:id="@+id/maps_input"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toRightOf="@id/address_input"
+            android:background="@drawable/maps_button"
+            android:text="Maps"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="16dp" />
+    </android.support.constraint.ConstraintLayout>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/constrain"
+        android:id="@+id/date_text"
+        android:layout_marginLeft="16dp"
+        android:textSize="16dp"
+
+        android:paddingBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:hint="Tanggal Lahir"
+        app:met_floatingLabel="highlight"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/constrain"
+        android:layout_toRightOf="@id/date_text"
+        android:id="@+id/date_input"
+        android:padding="10dp"
+        android:text="Pilih Tanggal"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorPrimary"
+        android:inputType="date"
+
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_input"
+        android:id="@+id/gol_Text"
+        android:layout_marginLeft="16dp"
+        android:textSize="16dp"
+        app:met_floatingLabel="highlight"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+
+        android:hint="Golongan Darah"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_input"
+        android:text="Pilih Golongan Darah"
+        android:textAllCaps="false"
+        android:layout_toRightOf="@+id/gol_Text"
+        android:id="@+id/type_button"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColor="@color/colorWhite"
+        />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_below="@+id/gol_Text"
+        android:layout_width="match_parent"
+        app:met_floatingLabel="highlight"
+        android:hint="Agama"
+        android:inputType="text"
+        android:layout_height="wrap_content"
+        android:id="@+id/agama"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/agama"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/rGroup">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lakiLaki"
+            android:text="Laki-Laki"/>
+
+        <RadioButton
+            android:id="@+id/perempuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perempuan"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:text="Lanjutkan"
+        android:textAllCaps="false"
+        android:id="@+id/nextButton"
+        android:textColor="@color/colorWhite"
+
+        />
+
+</RelativeLayout>

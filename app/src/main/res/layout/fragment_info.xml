@@ -1,0 +1,77 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.ridho.shareblood.Info">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/rel2"
+            android:padding="14dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tx"
+                android:text="Daftar Pendonor Sukarela"
+                android:textColor="#000"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Golongan Darah"
+                android:layout_below="@+id/tx"
+                android:id="@+id/golTx"/>
+
+            <RadioGroup
+                android:layout_below="@+id/tx"
+                android:layout_marginTop="-5dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gRadio"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:text="A"
+                    android:id="@+id/aType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:text="B"
+                    android:id="@+id/bType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:text="AB"
+                    android:id="@+id/abType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:text="O"
+                    android:id="@+id/oType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/rel2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/pendonor_list">
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+
+
+</FrameLayout>

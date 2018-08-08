@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Aktifitas">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Posting Membutuhkan Darah"
+                android:id="@+id/tx1"
+                android:textColor="#000"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak Ada Post"
+                android:id="@+id/tX1"
+                android:textSize="20dp"
+                android:visibility="invisible"
+                android:layout_below="@id/tx1"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@id/tx1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/blood_post_list">
+
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_below="@id/rl1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Posting Event Donor Darah"
+                android:id="@+id/tx2"
+                android:textColor="#000"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak Ada Post"
+                android:visibility="invisible"
+                android:textSize="20dp"
+                android:id="@+id/tX2"
+                android:layout_below="@id/tx2"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@id/tx2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/event_post_list">
+
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl3"
+            android:layout_below="@id/rl2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menjadi Pendonor"
+                android:id="@+id/tx3"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:id="@+id/tX3"
+                android:visibility="invisible"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak Ada Post"
+                android:textSize="20dp"
+                android:layout_below="@id/tx3"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@id/tx3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/react_post_list">
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

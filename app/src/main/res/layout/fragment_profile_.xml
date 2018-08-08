@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rel2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:background="@color/colorPrimary"
+                android:divider="?android:dividerHorizontal"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/splash_logo"
+                    android:id="@+id/imgProfil"
+                    />
+
+                <TextView
+                    android:id="@+id/nameTx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="10dp"
+                    android:text="Name"
+                    android:textSize="25sp"
+                    android:textColor="#fff"
+                    android:layout_below="@+id/imgProfil"
+                    android:layout_marginLeft="16dp" />
+
+                <TextView
+                    android:id="@+id/phoneTx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="#f1f1f1"
+                    android:layout_below="@+id/nameTx"
+                    android:layout_marginLeft="16dp" />
+
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Edit Profile"
+                    android:id="@+id/editProfile"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/search_input"/>
+
+                <Button
+                    android:layout_width="150dp"
+                    android:textAllCaps="false"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Save"
+                    android:visibility="invisible"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/saveBtn"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/search_input"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:id="@+id/ic_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_name"
+                        android:layout_centerVertical="true"
+                        android:padding="10dp"
+                        />
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        app:met_floatingLabel="highlight"
+                        android:layout_toRightOf="@+id/ic_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:id="@+id/p_name"
+                        android:hint="name"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:id="@+id/ic_gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_wc_black"
+                        android:layout_centerVertical="true"
+                        android:padding="10dp"
+                        />
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        app:met_floatingLabel="highlight"
+                        android:layout_toRightOf="@+id/ic_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:id="@+id/p_gender"
+                        android:hint="jenis kelamin"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:id="@+id/ic_religion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_prayer"
+                        android:layout_centerVertical="true"
+                        android:padding="10dp"
+                        />
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        app:met_floatingLabel="highlight"
+                        android:layout_toRightOf="@+id/ic_religion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:id="@+id/p_agama"
+                        android:hint="agama"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:id="@+id/ic_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_call_black_24dp"
+                        android:layout_centerVertical="true"
+                        android:padding="10dp"
+                        />
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        app:met_floatingLabel="highlight"
+                        android:layout_toRightOf="@+id/ic_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:id="@+id/p_phone"
+                        android:hint="no telepon"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:id="@+id/ic_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_email"
+                        android:layout_centerVertical="true"
+                        android:padding="10dp"
+                        />
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        app:met_floatingLabel="highlight"
+                        android:layout_toRightOf="@+id/ic_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:id="@+id/p_email"
+                        android:hint="email"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:id="@+id/ic_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_date"
+                        android:layout_centerVertical="true"
+                        android:padding="10dp"
+                        />
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        app:met_floatingLabel="highlight"
+                        android:layout_toRightOf="@+id/ic_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:hint="tanggal lahir"
+                        android:id="@+id/p_date"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:id="@+id/ic_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_location_on_black_24dp"
+                        android:layout_centerVertical="true"
+                        android:padding="10dp"
+                        />
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        app:met_floatingLabel="highlight"
+                        android:layout_toRightOf="@+id/ic_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:hint="alamat"
+                        android:id="@+id/p_alamat"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    >
+                    <ImageView
+                        android:id="@+id/ic_blood"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_local_hospital_black_24dp"
+                        android:layout_centerVertical="true"
+                        android:padding="10dp"
+                        />
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        app:met_floatingLabel="highlight"
+                        android:layout_toRightOf="@+id/ic_blood"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:hint="golongan darah"
+                        android:id="@+id/p_blood"/>
+                </RelativeLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnPendonor"
+                    android:layout_below="@+id/p_blood"
+                    android:background="@color/colorPrimary"
+                    android:text="Menjadi Pendonor Sukarela"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginBottom="10dp"/>
+                <Button
+                    android:visibility="invisible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnPendonorCancel"
+                    android:layout_below="@+id/p_blood"
+                    android:background="@color/colorPrimary"
+                    android:text="Batal Menjadi Pendonor"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginBottom="10dp"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:background="@drawable/red_button"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:text="Log Out"
+                    android:id="@+id/singout_button1"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>

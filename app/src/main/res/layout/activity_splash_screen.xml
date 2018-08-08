@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg"
+    tools:context="com.ridho.shareblood.SplashScreen"
+    tools:layout_editor_absoluteY="25dp">
+
+    <ImageView
+        android:id="@+id/splash_logo"
+        android:layout_width="154dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/splash_logo"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/splash_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_phone"
+        android:drawableTint="@color/colorPrimary"
+        android:drawablePadding="-10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:background="@color/colorWhite"
+        android:text="Signin With Phone"
+        android:textColor="@color/colorPrimary"
+        />
+
+</RelativeLayout>

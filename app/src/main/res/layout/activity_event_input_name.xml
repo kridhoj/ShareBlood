@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgwhite"
+    tools:context="com.ridho.shareblood.EventInputName">
+
+    <include layout="@layout/app_bar"
+        android:id="@+id/main_app_bar"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:padding="20dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        >
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="nama event"
+            app:met_floatingLabel="highlight"
+            android:id="@+id/eventName"
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            app:met_floatingLabel="highlight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="nama PJ"
+            android:layout_below="@id/eventName"
+            android:id="@+id/penanggunJawab"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/penanggunJawab"
+            android:id="@+id/date_text"
+            android:textSize="16dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:hint="tanggal kegiatan"
+            app:met_floatingLabel="highlight"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/penanggunJawab"
+            android:layout_toRightOf="@id/date_text"
+            android:id="@+id/date_input"
+            android:padding="10dp"
+            android:text="Pilih Tanggal"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimary"
+            android:inputType="date"
+            android:layout_marginLeft="16dp"
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/mulai"
+            app:met_floatingLabel="highlight"
+            android:hint="mulai"
+            android:inputType="datetime"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/date_input"
+            app:met_floatingLabelText="00:00"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:inputType="datetime"
+            android:layout_marginTop="10dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/selesai"
+            android:layout_below="@id/date_input"
+            android:layout_toRightOf="@id/mulai"
+            app:met_floatingLabel="highlight"
+            android:hint="selesai"
+            app:met_floatingLabelText="00:00"/>
+    </RelativeLayout>
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableTint="@color/colorPrimary"
+        android:drawablePadding="-10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:background="@color/colorPrimary"
+        android:text="Lanjutkan"
+        android:textColor="@color/colorWhite"
+        />
+
+
+</RelativeLayout>

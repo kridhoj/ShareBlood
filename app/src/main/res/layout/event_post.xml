@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/search_input"
+
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true">
+
+        <RelativeLayout
+            android:id="@+id/rl4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding= "10dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/rl1">
+                <TextView
+                    android:id="@+id/nama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="darah"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="17dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nama"
+                    android:id="@+id/tX"
+                    android:text="Tanggal :"/>
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tX"
+                    android:text="tanggal"
+                    android:id="@+id/tanggal"
+                    android:layout_below="@id/nama"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lokasi :"
+                    android:id="@+id/lokasiX"
+                    android:layout_below="@id/tX"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tX"
+                    android:text="lokasi"
+                    android:id="@+id/lokasiXX"
+                    android:layout_toRightOf="@id/lokasiX"
+                    android:layout_marginLeft="5dp"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/rl4"
+        android:background="#d7d7d7"
+
+        ></RelativeLayout>
+
+</RelativeLayout>

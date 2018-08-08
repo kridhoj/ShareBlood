@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PendonorList">
+    <include layout="@layout/app_bar"
+        android:id="@+id/main_app_bar"/>
+    <RelativeLayout
+        android:layout_below="@id/main_app_bar"
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar Pendonor"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tx1"
+            android:textColor="#000"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum Ada Pendonor"
+            android:id="@+id/tX1"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@id/tx1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pendonor_list">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+</RelativeLayout>
